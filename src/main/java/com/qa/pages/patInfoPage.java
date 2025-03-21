@@ -43,8 +43,7 @@ public class patInfoPage extends BasePage {
 
 		// Wait for the alert popup to be clickable and then click
 		wait.until(ExpectedConditions.elementToBeClickable(alertPopUp)).click();
-
-		// Wait for the search button to be clickable
+ 		// Wait for the search button to be clickable
 		wait.until(ExpectedConditions.elementToBeClickable(searchButton)).click();
 
 		// Wait for the link to be clickable
