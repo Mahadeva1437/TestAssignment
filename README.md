@@ -1,133 +1,156 @@
-# PatInformed Automation
+# **PatInformed Automation**
 
-This is a Selenium WebDriver-based test automation project for searching patents on the [WIPO Pat-Informed](https://patinformed.wipo.int/) website.
+This project automates searching for patents on the [WIPO Pat-Informed](https://patinformed.wipo.int/) website using **Selenium WebDriver** and **TestNG**.
 
-## **Project Overview**
-This project automates the process of:
-1. Opening the Pat-Informed website.
-2. Accepting terms and conditions.
-3. Searching for a patent dynamically based on user input.
-4. Clicking on the first result.
-5. Extracting and displaying the **Filing Date** and **Publication Date**.
-
-## **Technologies Used**
-- **Java** (Programming Language)
-- **Selenium WebDriver** (Automation Framework)
-- **TestNG** (Testing Framework)
-- **Maven** (Dependency Management)
-
-## **Installation Steps**
-### **1. Prerequisites**
-Ensure you have the following installed:
-- **Java 8 or later**
-- **Eclipse IDE** (or any Java-supported IDE)
-- **Maven**
-- **Google Chrome** (latest version)
-- **ChromeDriver** (Ensure it matches your Chrome version)
-
-# TestAssignment
-
-## 🚀 How to Run the Maven Project
-
-### **Prerequisites**
-Ensure you have the following installed:
-- **Java (JDK 11 or later)** → Check with `java -version`
-- **Apache Maven** → Check with `mvn -v`
-- **Git (optional)** → Check with `git --version`
+## **📌 Features**
+✅ Open the **Pat-Informed** website  
+✅ Accept **terms and conditions**  
+✅ Search for a patent dynamically **based on user input**  
+✅ Click on the first result  
+✅ Extract and display the **Filing Date** and **Publication Date**  
 
 ---
 
-### **1️⃣ Clone the Repository (If Not Already Cloned)**
+## **🛠️ Technologies Used**
+- **Java** (Programming Language)  
+- **Selenium WebDriver** (Automation Framework)  
+- **TestNG** (Testing Framework)  
+- **Maven** (Dependency Management)  
+
+---
+
+## **📥 Installation & Setup**
+
+### **1️⃣ Prerequisites**
+Ensure you have the following installed on your system:
+- **Java (JDK 11 or later)** → Check with:  
+  ```sh
+  java -version
+  ```
+- **Apache Maven** → Check with:  
+  ```sh
+  mvn -v
+  ```
+- **Google Chrome** (latest version)  
+- **ChromeDriver** (Ensure it matches your Chrome version)  
+- **Git (optional, for version control)** → Check with:  
+  ```sh
+  git --version
+  ```
+
+---
+
+### **2️⃣ Clone the Repository**
+Run the following command in your terminal or command prompt:
 ```sh
- git clone https://github.com/Mahadeva1437/TestAssignment.git
- cd TestAssignment
+git clone https://github.com/Mahadeva1437/TestAssignment.git
+cd TestAssignment
 ```
 
 ---
 
-### **2️⃣ Build & Run the Project**
-#### **Step 1: Navigate to Project Directory**
+## **🚀 How to Build & Run the Maven Project**
+
+### **1️⃣ Navigate to the Project Directory**
 ```sh
 cd C:\Users\Dell\eclipse-workspace2\TestAssignment
 ```
 
-#### **Step 2: Clean the Project**
+### **2️⃣ Clean the Project**
 ```sh
 mvn clean
 ```
 
-#### **Step 3: Compile the Source Code**
+### **3️⃣ Compile the Source Code**
 ```sh
 mvn compile
 ```
 
-#### **Step 4: Run Unit Tests** (if applicable)
+### **4️⃣ Run Unit Tests** (if applicable)
 ```sh
 mvn test
 ```
 
-#### **Step 5: Package the Project**
+### **5️⃣ Package the Project**
 ```sh
 mvn package
 ```
-This will generate a JAR/WAR file inside the `target/` folder.
+This will generate a **JAR** or **WAR** file inside the `target/` folder.
 
-#### **Step 6: Run the Application**
+### **6️⃣ Run the Application**
 
-**(A) If it's a Java Application (`.jar` file)**
+#### **A) If It’s a Java Application (`.jar` File)**
 ```sh
 java -jar target/TestAssignment-0.0.1-SNAPSHOT.jar
 ```
 
-**(B) If it's a Web Application (`.war` file)**
+#### **B) If It’s a Web Application (`.war` File)**
 Deploy the `.war` file to Tomcat or run:
 ```sh
 mvn tomcat7:run
 ```
 
-**(C) If the Project Has a `main` Method**
+#### **C) If the Project Has a `main` Method**
 ```sh
 mvn exec:java -Dexec.mainClass="com.example.MainClass"
 ```
-Replace `com.example.MainClass` with the actual fully qualified class name.
+Replace `com.example.MainClass` with your actual **fully qualified class name**.
 
 ---
 
-### **3️⃣ Push Latest Code to GitHub**
-#### **Step 1: Check Status**
+## **📤 How to Push Latest Code to GitHub**
+
+### **1️⃣ Check the Status**
 ```sh
 git status
 ```
-#### **Step 2: Add Changes**
+
+### **2️⃣ Add Changes**
 ```sh
 git add .
 ```
-#### **Step 3: Commit Changes**
+
+### **3️⃣ Commit the Changes**
 ```sh
 git commit -m "Latest code update with fixes"
 ```
-#### **Step 4: Pull the Latest Code to Avoid Conflicts**
+
+### **4️⃣ Pull the Latest Code to Avoid Conflicts**
 ```sh
 git pull origin main --rebase
 ```
-#### **Step 5: Push Changes**
+
+### **5️⃣ Push the Code to GitHub**
 ```sh
 git push origin main
 ```
 
 ---
 
-### **🔍 Troubleshooting**
-- **Check Maven Version**: `mvn -v`
-- **Check Java Version**: `java -version`
-- **Enable Debugging**: `mvn clean install -X`
+## **❓ Troubleshooting**
 
-🚀 **Now your Maven project is set up and ready to run!**
-
-
-
-### **2. Clone the Repository**
-Run the following command in your terminal:
+### **Check Java & Maven Versions**
 ```sh
-git clone [<repository-url>](https://github.com/Mahadeva1437/TestAssignment.git)
+java -version
+mvn -v
+```
 
+### **Enable Debugging for Maven Build Issues**
+```sh
+mvn clean install -X
+```
+
+### **If Git Push is Rejected (Remote Changes Exist)**
+```sh
+git pull origin main --rebase
+git push origin main
+```
+
+---
+
+## **📜 License**
+This project is **open-source** and available under the [MIT License](LICENSE).
+
+---
+
+🚀 **Now your Maven project is ready to run and automate patent searches!** Let me know if you need any modifications. 😊
