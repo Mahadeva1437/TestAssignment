@@ -56,6 +56,13 @@ public class ReadConfig {
 			return Password;
 		}
 	
+		
+		public String getKeyword()
+
+		{
+			String Keyword = pro.getProperty("Keyword");
+			return Keyword;
+		}
 
 
 public String getChromepath()

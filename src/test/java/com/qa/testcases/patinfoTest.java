@@ -15,9 +15,7 @@ public class patinfoTest extends TestBase{
 	public void Homepage() throws InterruptedException{		
 		patInfoPage page =new patInfoPage(getDriver());
 		
-		page.endtoendcases();
-//		Home.logout();
-	
+
 
 }
 	

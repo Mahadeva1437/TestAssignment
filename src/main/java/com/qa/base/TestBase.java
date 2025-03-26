@@ -1,5 +1,4 @@
 package com.qa.base;
-import java.awt.AWTException;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -9,17 +8,13 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 //import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
-import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
 
+import com.qa.pages.patInfoPage;
 import com.qa.util.ReadConfig;
 
 
@@ -74,7 +69,8 @@ public class TestBase {
 			getDriver().manage().window().maximize();
 			getDriver().manage().deleteAllCookies();		
 			getDriver().get(readconfig.getApplicationURL("Dev"));
-
+			patInfoPage patPage=new patInfoPage(getDriver());
+			patPage.endtoendcases(readconfig.getKeyword());
 	}
 	
 	public static WebDriver getDriver() 

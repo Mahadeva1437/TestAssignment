@@ -6,6 +6,7 @@
       <class name="com.qa.testcases.patinfoTest">
         <methods>
           <include name="Homepage"/>
+          <include name="tearDown"/>
           <include name="initialization"/>
         </methods>
       </class> <!-- com.qa.testcases.patinfoTest -->

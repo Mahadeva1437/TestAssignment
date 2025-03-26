@@ -2,6 +2,7 @@ package com.qa.pages;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Scanner;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -35,11 +36,13 @@ public class patInfoPage extends BasePage {
 	@FindBy(xpath = "//b[text()='Filing date']/../following-sibling::td")
 	List<WebElement> elementsDates;
 
-	public void endtoendcases() throws InterruptedException {
+	public void endtoendcases(String key) throws InterruptedException {
+		
+
 //		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
-		searchField.sendKeys("dolo");
+		searchField.sendKeys(key);
 
 		// Wait for the alert popup to be clickable and then click
 		wait.until(ExpectedConditions.elementToBeClickable(alertPopUp)).click();
@@ -73,5 +76,7 @@ public class patInfoPage extends BasePage {
 		}
 
 	}
+
+	
 
 }
